@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
     "name": "숨고 채팅 추출기",
-    "description": "숨고 채팅방 메시지를 전체 추출하여 클립보드에 복사합니다 (Alt+1)",
-    "version": "1.1.0",
+    "description": "숨고 채팅 추출(Alt+1) + 오래된 요청 자동 삭제(Alt+2)",
+    "version": "1.2.0",
     "permissions": [
         "activeTab",
         "scripting"
@@ -13,6 +13,12 @@
                 "default": "Alt+1"
             },
             "description": "숨고 채팅 메시지 추출"
+        },
+        "delete-old-requests": {
+            "suggested_key": {
+                "default": "Alt+2"
+            },
+            "description": "숨고 오래된 요청 자동 삭제"
         }
     },
     "background": {
