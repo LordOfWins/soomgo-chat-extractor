@@ -1,12 +1,22 @@
 {
     "manifest_version": 3,
-    "name": "숨고 채팅 추출기",
-    "description": "숨고 채팅 추출(Alt+1) + 오래된 요청 자동 삭제(Alt+2)",
-    "version": "1.2.0",
+    "name": "숨고 채팅 도우미",
+    "description": "숨고 채팅 추출(Alt+1) + 오래된 요청 삭제(Alt+2) + 예약 메시지 전송",
+    "version": "2.0.0",
     "permissions": [
         "activeTab",
-        "scripting"
+        "scripting",
+        "storage",
+        "alarms",
+        "tabs"
     ],
+    "host_permissions": [
+    "https://soomgo.com/*"
+],
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "숨고 채팅 도우미"
+    },
     "commands": {
         "extract-chat": {
             "suggested_key": {
